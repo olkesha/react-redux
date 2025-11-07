@@ -24,7 +24,7 @@ function App() {
       <Header />
       <main className={styles.main}>
         <Routes>
-          <Route path='/' element={<Products />} />
+          <Route path='/react-redux' element={<Products />} />
           <Route path='/create-product' element={<CreateProduct />} />
           <Route path='/products/:id' element={<Product />} />
         </Routes>
