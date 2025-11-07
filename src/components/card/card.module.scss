@@ -1,0 +1,53 @@
+.card {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  flex: 1 1 300px;
+  min-width: 300px;
+  height: 270px;
+
+  cursor: pointer;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+
+  border: 4px solid #fff;
+  border-radius: 8px;
+  padding: 25px;
+  transition: all 0.3s ease-in-out;
+  
+  &:hover {
+    box-shadow: 10px 10px 0px rgba(219, 219, 219, 0.5);
+    // box-shadow: none;
+  }
+}
+
+.card__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card__image {
+  object-fit: contain;
+}
+
+.card__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+
+  margin-block-start: auto;
+}
+
+.card__like {
+  background-color: green;
+}
